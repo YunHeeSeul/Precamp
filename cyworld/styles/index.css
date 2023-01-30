@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+ 
+.background {
+    width: 1024px;
+    height: 600px;
+    background-image: url("../images/background.png");
+    padding: 20px 0px 0px 20px;
+}
+
+.outerbox{
+    width: 808px;
+    height: 544px;
+    background-image: url("../images/outerbox.png");
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0px 0px 32px;
+}
+
+.wrapper__left {
+    width: 208px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__left__header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    font-size: 9px;
+}
+
+.wrapper__left__body {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /*header, profile, footer 수직 정렬*/
+    align-items: center; /*수직정렬된 박스들을 가로로 가운데 정렬*/
+    padding: 20px 30px;
+}
+
+.left__body__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*gray와 line 수직 정렬*/
+}
+
+.left__body__header__gray {
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+}
+
+.left__body__header__line {
+    /*border는 상하좌우 모두 테두리가 생김*/
+    /*border-top은 위에만 테두리가 생김*/
+    /*dotted는 점선 테두리가 생김*/
+    border-top: 1px dotted black; 
+
+    /*상하 여백 주기*/
+    margin: 12px 0px; /*앞은 상하, 뒤는 좌우*/
+}
+
+.left__body__profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left__body__footer {
+    width: 100%;
+    padding-top: 70px;
+}
+
+.feel {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+select {
+    width: 100%;
+}
+
+.wrapper__right {
+    width: 524px;
+    height: 472px;
+    background-color:cadetblue;
+}
