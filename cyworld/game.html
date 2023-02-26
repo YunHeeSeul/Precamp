@@ -3,6 +3,7 @@
     <header>
         <title>GAME</title>
         <link href="./styles/game.css" rel="stylesheet">
+        <script src="./game.js"></script>
     </header>
 
     <body>
@@ -18,10 +19,10 @@
                 <div class="game__container">
                     <img src="./images/word.png">
                     <div class="game__title">끝말잇기</div>
-                    <div class="game__subtitle">제시어 : 뉴비즈코드</div>
+                    <div class="game__subtitle">제시어 : <span id="word">코드캠프</span></div>
                     <div class="search__word">
                         <input class="inputbox" id="input" placeholder="단어를 입력하세요.">
-                        <button class="searchbtn">검색</button>
+                        <button class="searchbtn" onclick="censor()">검색</button>
                     </div>
                     <div class="search__result" id="result">결과!</div>
                 </div>
