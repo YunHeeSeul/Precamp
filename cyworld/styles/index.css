@@ -114,10 +114,11 @@ select {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0px 10px;
+    padding: 5px 0px;
 }
 
 .right__header__title{
+    margin: 0px 0px 3px 30px;
     font-family: 'Malgun Gothic';
     font-style: normal;
     font-weight: 700;
@@ -134,7 +135,7 @@ select {
     font-size: 13px;
     line-height: 16px;
 
-    color: #55B2D4;
+    color: #000000;
 }
 
 .wrapper__right__body{
